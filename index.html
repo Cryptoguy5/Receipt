@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciept</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .main {
+            height: 90%;
+            width: 30%;
+            background-color: whitesmoke;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .resturant {
+            text-align: center;
+        }
+
+        p {
+            margin: 5px;
+        }
+
+        hr {
+            border: none;
+            border-bottom: 2px dotted black;            
+        }
+
+        .taxinvoice {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 24px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .hr2 {
+        border: 3px dotted black;
+        width: 80%;
+        }
+
+        .hr3 {
+        border: 3px dotted black;
+        width: 100%;
+        }
+
+        .hr4 {
+            width: 80%;
+        }
+
+        .hr5 {
+            width: 50%;
+        }
+
+        .table12 {
+            float: left;
+            width: 65%;
+            height: 100%;
+            margin-top: 0;
+        }
+
+        .cashier11 {
+            float: right;
+            width: 35%;
+            height: 100%;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .name {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: repeat(10, 10%);
+        }
+
+        .number {
+            padding-left: 5%;
+        }
+
+        .a {
+            display: none;
+        }
+
+        .subtotal {
+            margin-bottom: 10px;
+        }
+       
+        .barcode {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } 
+
+        @media (max-width:680px) {
+            img {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="main">
+    <div class="resturant">
+        <h2>Resturant</h2>
+        <p>Lorem Ipsum 323</p>
+        <p>City Index &middot; 00234 </p>
+        <p>Tel (123)-456-7890</p>
+        <hr />
+    </div>
+    <div class="taxinvoice">
+        <p>Tax Invoice <br />
+        Cash Reciept</p>
+        <hr class="hr2" />
+    </div>
+    <div>
+        <div class="table12">
+            <p>Table 12 <br />
+               Bill 000-000</p>
+        </div>
+        <div class="cashier11">
+            <p>Cashier#11 <br />
+                12 12 2020</p>
+        </div>
+        <hr class="hr2" />
+    </div>
+    <div class="name">
+        <p>Name</p>
+        <p>Qty</p>
+        <p>Total</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>Chicken Curry</p>
+        <p class="number">1</p>
+        <p>$11.00</p>
+        <p>Fried Chicken</p>
+        <p class="number">2</p>
+        <p>$10.00</p>
+        <p>Cheeseburger</p>
+        <p class="number">2</p>
+        <p>$8.00</p>
+        <p>Beer</p>
+        <p class="number">2</p>
+        <p>$8.00</p>
+        <p>Water</p>
+        <p class="number">2</p>
+        <p>$2.00</p>
+        <p>Katchup</p>
+        <p class="number">1</p>
+        <p>$1.00</p>
+        <p>Soy Sauce</p>
+        <p class="number">1</p>
+        <p>$1.00</p>
+        <p>Other</p>
+        <p class="number">2</p>
+        <p>$10.00</p>
+    </div>
+    <hr class="hr3" />
+    <div>
+      <div class="table12">
+        <h2 class="subtotal">Sub Total</h2>
+        <p>Cash</p>
+        <p>Change</p>
+    </div>
+      <div class="cashier11">
+        <h2>$51.00</h2>
+        <p>$60.00</p>
+        <p>$9.00</p>
+      </div>
+      <hr class="hr4" />
+   </div>
+   <div class="barcode">
+    <img src="./barcodeImage.png" alt="barcodeImage">
+   </div>
+   <div class="barcode" >
+    <p>Thank You!</p>
+    <p>Please Come Again!</p>
+    <hr class="hr4" />
+    <hr class="hr5" />
+   </div>
+  </div>
+</body>
+</html>
